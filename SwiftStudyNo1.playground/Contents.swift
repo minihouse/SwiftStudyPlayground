@@ -27,7 +27,7 @@ for i in 0...100 {
     XCPCaptureValue("y", value: y)
 }
 
-//: ビューの確認はResult
+//: ビューの確認は右の+ボタンで見れる
 let viewA = UIView(frame: CGRectMake(0, 0, 200, 200))
 viewA.backgroundColor = UIColor.redColor()
 //: アニメーションの動きの確認はXCPShowViewを使ってTimelineで確認
@@ -36,6 +36,7 @@ UIView.animateWithDuration(2.0) { () -> Void in
 }
 
 XCPShowView("viewA", view: viewA)
+
 
 /*:
 ### 静的な型チェック
